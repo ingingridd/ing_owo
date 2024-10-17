@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tablas en HTML</title>
+    <link rel="stylesheet" href="/css/stylepage.css">
+    <style type="text/css">
+        #tabla1 {
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+            color: #CE7095;
+            border: 5px solid #CE7095;
+            border-spacing: 10px;
+        }
+        #tabla1 th {
+            width: 200px;
+            background-color: #CE7095;
+            color: #FFDBD7;
+        }
+        #tabla1 td {
+            background-color: #FFDBD7;
+            text-align: left;
+            font-size: 16px;
+            border-top-width: 3px;
+            border-radius: 5px;
+            margin: 10px;;
+        }
+        #tabla2 {
+            color: #CE7095;
+        }
+        #tabla2 td {
+            color: #855E6E;
+            height: 50px;
+            padding: 5px;
+        }
+        .tabla_dos {
+            width: 600px;
+            border-collapse: collapse;
+            border-color: #CE7095;
+            border-style: solid;
+            margin: 0 auto;
+        }
+        .tabla_dos td {
+            width: 150px;
+            padding: 10px;
+            border-color: #CE7095;
+            border-style: dashed;
+        }
+        .tabla_dos th {
+            background-color: #FFB2C1;
+        }
+        .tabla_dos td {
+            background-color: #FFDBD7;
+        }
+        #tabla_zebra {
+            width: 80%;
+            border-color: #CE7095;
+            border-style: solid;
+            margin: 0 auto;
+        }
+        #tabla_zebra td {
+            border-color: #CE7095;
+        }
+        #tabla_zebra tbody tr:nth-child(even) {
+            background-color: #CE7095;
+        }
+        #tabla_zebra tbody tr:nth-child(odd) {
+            background-color: #FFB2C1;
+        }
+        #tabla_zebra thead tr {
+            background-color: #855E6E;
+        }
+        .tabla_hover{
+            width: 80%;
+            color: #855E6E;
+            background-color: #FFDBD7;
+            border-collapse: collapse;
+            border-color: #CE7095;
+            border-style: dashed;
+            margin: 0 auto;
+        }
+        .tabla_hover td {
+            padding: 10px;
+            border-color: #CE7095;
+            border-style: dashed;
+        }
+        .tabla_hover tr:hover {
+            background-color: #CE7095;
+            color: ghostwhite;
+        }
+        .tabla_hover thead tr {
+            background-color: #FFB2C1;
+            padding: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>TABLAS EN HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Inicio</a></li>
+                <li><a href="/html/Mis Listas.html">Listas</a></li>
+                <li><a href="/html/tablas.html">Tablas</a></li>
+                <li><a href="/html/enlaces.html">Enlaces</a></li>
+                <li><a href="/html/imagenes.html">Imagenes</a></li>
+                <li><a href="/html/audios.html">Audio</a></li>
+                <li><a href="/html/video.html">Video</a></li>
+                <li><a href="/html/forms.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section style="overflow-x: auto;">
+                <h2>TABLAS</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, harum doloribus quaerat, adipisci architecto quidem debitis vel nesciunt sequi dolorum similique nam dicta fuga iste consectetur tempora assumenda voluptates ipsa.
+                    <table border="1" id="tabla1">
+                        <thead>
+                            <tr>
+                                <th>Matricula</th>
+                                <th>Nombre</th>
+                                <th>Apellido Paterno</th>
+                                <th>Apellido Materno</th>
+                                <th>Colegio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>20215485</td>
+                                <td>Jose Luis</td>
+                                <td>Torres</td>
+                                <td>Diaz</td>
+                                <td>Arquitectura</td>
+                            </tr>
+                            <tr>
+                                <td>202016258</td>
+                                <td>Aldo</td>
+                                <td>Ramirez</td>
+                                <td>Jimenez</td>
+                                <td>Grafico</td>    
+                            </tr>
+                            <tr>
+                                <td>202145678</td>
+                                <td>Fernanda</td>
+                                <td>Gonzales</td>
+                                <td>Alvarez</td>
+                                <td>Urbano</td>
+                            </tr>
+                            <tr>
+                                <td>202145876</td>
+                                <td>Ximena</td>
+                                <td>Torres</td>
+                                <td>Hernandez</td>
+                                <td>Arquitectura</td>
+                            </tr>
+                            <tr>
+                                <td>202051269</td>
+                                <td>Elias</td>
+                                <td>Castillo</td>
+                                <td>Romero</td>
+                                <td>Grafico</td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </p>
+            </section>
+            <section style="overflow-x: auto;">
+                <h2>TABLAS</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, harum doloribus quaerat, adipisci architecto quidem debitis vel nesciunt sequi dolorum similique nam dicta fuga iste consectetur tempora assumenda voluptates ipsa.
+                </p>
+                <table id="tabla2" class="tabla_dos">
+                    <thead>
+                        <tr>
+                        <th style="width: 200px;">Nombre</th>
+                        <th style="width: 100px;">Edad</th>
+                        <th colspan="2" style="width: 200px;">Telefono</th>
+                        <th style="width: 100px;">Cooperacion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="width: 200px;">Georgina Lopez Mendoza</td>
+                            <td style="text-align: center; padding: 0;">15</td>
+                            <td>2225487912</td>
+                            <td>2224567891</td>
+                            <td style="text-align: center;
+                            padding: 0;
+                            background-color: bisque;">100</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px;">Juan</td>
+                            <td style="text-align: center; padding: 0;">14</td>
+                            <td>2221054874</td>
+                            <td>2224567891</td>
+                            <td style="text-align: center;
+                            padding: 0;
+                            background-color: bisque;">50</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px;">Maria del Carmen Fernandez Perez</td>
+                            <td style="text-align: center; padding: 0;">13</td>
+                            <td style="width: 100;">2225874963</td>
+                            <td>2224567891</td>
+                            <td style="text-align: center;
+                            padding: 0;
+                            background-color: bisque;">150</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px;">Felipe Juarez Lopez</td>
+                            <td style="text-align: center; padding: 0;">14</td>
+                            <td>2224176952</td>
+                            <td>2224567891</td>
+                            <td style="text-align: center;
+                            padding: 0;
+                            background-color: bisque;">80</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 200px;">Aaron Suarez Mejia</td>
+                            <td style="text-align: center; padding: 0;">13</td>
+                            <td>2225864578</td>
+                            <td>2224567891</td>
+                            <td style="text-align: center;
+                            padding: 0;
+                            background-color: bisque;">100</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="celda_centrada" style="background-color: blanchedalmond;">480</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto;">
+                <h2>TABLAS</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, harum doloribus quaerat, adipisci architecto quidem debitis vel nesciunt sequi dolorum similique nam dicta fuga iste consectetur tempora assumenda voluptates ipsa.
+                </p>
+                <table id="tabla_zebra">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Deporte</th>
+                            <th>Telefono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Lourdes Diaz Salamanca</td>
+                        <td>18</td>
+                        <td>Futbol</td>
+                        <td>2224586978</td>
+                        <td>lulu.diaz@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jose Luis Perez Dominguez</td>
+                        <td>21</td>
+                        <td>Voleyball</td>
+                        <td>2225487961</td>
+                        <td>guicho_21@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Pablo Mendez Cabrera</td>
+                        <td>19</td>
+                        <td>Futbol</td>
+                        <td>2227481306</td>
+                        <td>pablo_star@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mariana Gonzales Gonzales</td>
+                        <td>20</td>
+                        <td>Natacion</td>
+                        <td>2226593216</td>
+                        <td>mariana.gonzales@yahoo.com</td>
+                    </tr>
+                    <tr>
+                        <td>Graciela Fernandez Ruiz</td>
+                        <td>21</td>
+                        <td>Karate</td>
+                        <td>2225820314</td>
+                        <td>fernandez.gracielaa@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jose Fernandez Jimenez</td>
+                        <td>20</td>
+                        <td>Futbol</td>
+                        <td>2224791032</td>
+                        <td>pepe.fer@hotmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Monserrat Camacho Gomez</td>
+                        <td>21</td>
+                        <td>Karate</td>
+                        <td>2225863102</td>
+                        <td>momse.camacho21@hotmail.com</td>
+                    </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+            <section style="overflow-x: auto;">
+                <h2>Tabla</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nesciunt ex consequuntur exercitationem consectetur, cumque sunt quis vero aut adipisci ab pariatur eum numquam iusto sapiente doloribus voluptates ullam molestias?
+                </p>
+                <table class="tabla_hover">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Deporte</th>
+                            <th>Telefono</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Lourdes Diaz Salamanca</td>
+                        <td>18</td>
+                        <td>Futbol</td>
+                        <td>2224586978</td>
+                        <td>lulu.diaz@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jose Luis Perez Dominguez</td>
+                        <td>21</td>
+                        <td>Voleyball</td>
+                        <td>2225487961</td>
+                        <td>guicho_21@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Pablo Mendez Cabrera</td>
+                        <td>19</td>
+                        <td>Futbol</td>
+                        <td>2227481306</td>
+                        <td>pablo_star@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mariana Gonzales Gonzales</td>
+                        <td>20</td>
+                        <td>Natacion</td>
+                        <td>2226593216</td>
+                        <td>mariana.gonzales@yahoo.com</td>
+                    </tr>
+                    <tr>
+                        <td>Graciela Fernandez Ruiz</td>
+                        <td>21</td>
+                        <td>Karate</td>
+                        <td>2225820314</td>
+                        <td>fernandez.gracielaa@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jose Fernandez Jimenez</td>
+                        <td>20</td>
+                        <td>Futbol</td>
+                        <td>2224791032</td>
+                        <td>pepe.fer@hotmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Monserrat Camacho Gomez</td>
+                        <td>21</td>
+                        <td>Karate</td>
+                        <td>2225863102</td>
+                        <td>momse.camacho21@hotmail.com</td>
+                    </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <h5>Elaborado por Ingrid</h5>
+        </footer>
+    </header>
+</body>
+</html>
